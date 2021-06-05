@@ -1,5 +1,5 @@
 
-/*
+
 let trackCar = function(carId, city='NY'){
     console.log(`Tracking ${carId} in ${city}.`);
 };
@@ -63,15 +63,15 @@ console.log(sedan);
 console.log(result)
 
 console.log(cars);
-*/
 
-class Car {
-    constructor(id){
-        this.id = id;
+
+class Carr {
+    constructor(ids) {
+        this.ids = ids;
     }
     identify() {
-        return `Car Id: ${this.id}`;
+        return `Car Id: ${this.ids}`;
     }
 }
-let carr= new Car(123);
-console.log( carr.id );
+let carr= new Carr(123);
+console.log( carr.identify() );
