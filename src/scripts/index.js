@@ -1,4 +1,35 @@
 
+let element = document.getElementById('first');
+
+element.setAttribute('bolas', 'bolasValue')
+
+element.textContent = 'Tocame las bolas.';
+
+element.style.color = 'yellow';
+
+console.log(element);
+/*
+console.log(document.location.href);
+
+let intervalId = setInterval( function() {
+    console.log( '1 second passed');
+}, 1000);
+
+clearInterval(intervalId);
+
+let timeoutId = setTimeout( function() {
+    console.log( '1 second passed');
+}, 1000);
+
+year = 1956;
+
+console.log(window.year);
+
+import { Car } from './model/car.js';
+
+let car = new Car(123);
+console.log( car.id );
+
 
 let trackCar = function(carId, city='NY'){
     console.log(`Tracking ${carId} in ${city}.`);
@@ -69,9 +100,27 @@ class Carr {
     constructor(ids) {
         this.ids = ids;
     }
-    identify() {
-        return `Car Id: ${this.ids}`;
+    identify(suffix) {
+        return `Car Id: ${this.ids} ${suffix}`;
     }
 }
 let carr= new Carr(123);
-console.log( carr.identify() );
+console.log( carr.identify('!!!') );
+
+class Vehicle {
+    constructor() {
+        this.type = 'car';
+    }
+    start() {
+        return `Starting: ${this.type}`;
+    }
+}
+
+class Car extends Vehicle {
+    start() {
+        return 'in Car start ' + super.start();
+    }
+}
+let car = new Car();
+console.log( car.start() );
+*/
