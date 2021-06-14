@@ -1,13 +1,14 @@
 
 let element = document.getElementById('first');
 
-element.setAttribute('bolas', 'bolasValue')
+element.setAttribute('bolas', 'bolasValue');
 
 element.textContent = 'Tocame las bolas.';
 
 element.style.color = 'yellow';
 
 console.log(element);
+
 /*
 console.log(document.location.href);
 
